@@ -58,7 +58,7 @@ function FilmCard({ film }) {
       <div className="flex flex-col md:flex-row">
 
         {/* Left - video or thumbnail */}
-        <div className="relative w-full md:w-80 h-auto flex-shrink-0 bg-black group">
+        <div className="relative w-full sm:w-64 md:w-80 h-auto flex-shrink-0 bg-black group">
           {film.videoUrl && playing ? (
             <>
               <iframe
@@ -149,12 +149,12 @@ function FilmCard({ film }) {
 
 export default function Films() {
   return (
-    <main className="min-h-screen px-8 py-12 flex flex-col items-center gap-8">
+    <main className="min-h-screen px-4 sm:px-8 py-8 sm:py-12 flex flex-col items-center gap-6 sm:gap-8">
       <Card>
-        <h1 className="text-6xl font-bold text-black tracking-[0.3em] cursor">
+        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.3em] cursor">
           <Typewriter text="FILMS" speed={90} />
         </h1>
-        <p className="text-black flex flex-col items-center gap-4 mt-4">
+        <p className="text-black flex flex-col items-center gap-2 sm:gap-4 mt-3 sm:mt-4 text-xs sm:text-sm">
           <Typewriter text="stories worth telling." speed={20} />
         </p>
       </Card>

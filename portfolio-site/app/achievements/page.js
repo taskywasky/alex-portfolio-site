@@ -78,14 +78,14 @@ function renderDescription(text) {
 
 export default function Achievements() {
   return (
-    <main className="min-h-screen px-8 py-12 flex flex-col items-center gap-12">
+    <main className="min-h-screen px-4 sm:px-8 py-8 sm:py-12 flex flex-col items-center gap-8 sm:gap-12">
 
       {/* Header */}
       <Card>
-        <h1 className="text-6xl font-bold text-black tracking-[0.3em] cursor">
+        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.3em] cursor">
           <Typewriter text="ACHIEVEMENTS" speed={90} />
         </h1>
-        <p className="text-black flex flex-col items-center gap-4 mt-4">
+        <p className="text-black flex flex-col items-center gap-2 sm:gap-4 mt-3 sm:mt-4 text-xs sm:text-sm">
           <Typewriter text="the grind pays off." speed={20} />
         </p>
       </Card>
