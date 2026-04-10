@@ -19,14 +19,14 @@ const timeline = [
     title: 'Premiere @ All American High School Film Festival',
     category: 'AWARD',
     description: 'Intrusive got accepted and premiered at the 2025 All American High School Film Festival.',
-    image: '/photos/achievements/allamericanhighschool.png',
+    image: '/photos/achievements/allamericanhighschool.webp',
   },
   {
     year: '2024',
     title: 'YDA World Premiere',
     category: 'EVENT',
     description: 'Intrusive premiered for the first time at the 2024 YDA Awards.',
-    image: '/photos/achievements/ydaworldpremiere.jpg',
+    image: '/photos/achievements/ydaworldpremiere.webp',
   },
 ]
 

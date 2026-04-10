@@ -10,11 +10,11 @@ const collections = {
   favs: {
     label: 'FAVS',
     photos: [
-      { src: '/photos/gfx/favs/1.png', alt: 'Photo 1', desc: 'something happened here.', likes: 142, username: 'whobealex' },
-      { src: '/photos/gfx/favs/2.png', alt: 'Photo 2', desc: 'another thing happened.', likes: 89, username: 'whobealex' },
-      { src: '/photos/gfx/favs/3.png', alt: 'Photo 3', desc: 'another thing happened.', likes: 3, username: 'whobealex' },
-      { src: '/photos/gfx/favs/4.png', alt: 'Photo 4', desc: 'another thing happened.', likes: 12, username: 'whobealex' },
-      { src: '/photos/gfx/favs/5.png', alt: 'Photo 5', desc: 'another thing happened.', likes: 8892, username: 'whobealex' },
+      { src: '/photos/gfx/favs/1.webp', alt: 'Photo 1', desc: 'something happened here.', likes: 142, username: 'whobealex' },
+      { src: '/photos/gfx/favs/2.webp', alt: 'Photo 2', desc: 'another thing happened.', likes: 89, username: 'whobealex' },
+      { src: '/photos/gfx/favs/3.webp', alt: 'Photo 3', desc: 'another thing happened.', likes: 3, username: 'whobealex' },
+      { src: '/photos/gfx/favs/4.webp', alt: 'Photo 4', desc: 'another thing happened.', likes: 12, username: 'whobealex' },
+      { src: '/photos/gfx/favs/5.webp', alt: 'Photo 5', desc: 'another thing happened.', likes: 8892, username: 'whobealex' },
     ]
   },
 }

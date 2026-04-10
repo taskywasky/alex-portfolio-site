@@ -10,20 +10,21 @@ const collections = {
   favs: {
     label: 'FAVS',
     photos: [
-      { src: '/photos/favs/1.jpg', alt: 'Photo 1', desc: 'something happened here.', likes: 142, username: 'whobealex' },
-      { src: '/photos/favs/2.jpg', alt: 'Photo 2', desc: 'another thing happened.', likes: 89, username: 'whobealex' },
-      { src: '/photos/favs/3.jpg', alt: 'Photo 3', desc: 'yet another thing happened.', likes: 203, username: 'whobealex' },
+      { src: '/photos/favs/fav1.webp', alt: 'Photo 1', desc: 'something happened here.', likes: 142, username: 'whobealex' },
+      { src: '/photos/favs/fav2.webp', alt: 'Photo 2', desc: 'another thing happened.', likes: 89, username: 'whobealex' },
+      { src: '/photos/favs/fav3.webp', alt: 'Photo 3', desc: 'yet another thing happened.', likes: 203, username: 'whobealex' },
+      { src: '/photos/favs/fav4.webp', alt: 'Photo 4', desc: 'yet another thing happened.', likes: 156, username: 'whobealex' },
     ]
   },
   offdutysoldier: {
     label: 'OFF DUTY SOLDIER',
     photos: [
-      { src: '/photos/offdutysoldier/1.jpg', alt: 'Photo 1', desc: 'something happened here.', likes: 142, username: 'whobealex' },
-      { src: '/photos/offdutysoldier/2.jpg', alt: 'Photo 2', desc: 'another thing happened.', likes: 89, username: 'whobealex' },
-      { src: '/photos/offdutysoldier/3.jpg', alt: 'Photo 3', desc: 'yet another thing happened.', likes: 67, username: 'whobealex' },
-      { src: '/photos/offdutysoldier/4.jpg', alt: 'Photo 4', desc: 'yet another thing happened.', likes: 123, username: 'whobealex' },
-      { src: '/photos/offdutysoldier/5.jpg', alt: 'Photo 5', desc: 'yet another thing happened.', likes: -1, username: 'whobealex' },
-      { src: '/photos/offdutysoldier/6.jpg', alt: 'Photo 6', desc: 'yet another thing happened.', likes: 360, username: 'whobealex' },
+      { src: '/photos/offdutysoldier/1.webp', alt: 'Photo 1', desc: 'something happened here.', likes: 142, username: 'whobealex' },
+      { src: '/photos/offdutysoldier/2.webp', alt: 'Photo 2', desc: 'another thing happened.', likes: 89, username: 'whobealex' },
+      { src: '/photos/offdutysoldier/3.webp', alt: 'Photo 3', desc: 'yet another thing happened.', likes: 67, username: 'whobealex' },
+      { src: '/photos/offdutysoldier/4.webp', alt: 'Photo 4', desc: 'yet another thing happened.', likes: 123, username: 'whobealex' },
+      { src: '/photos/offdutysoldier/5.webp', alt: 'Photo 5', desc: 'yet another thing happened.', likes: -1, username: 'whobealex' },
+      { src: '/photos/offdutysoldier/6.webp', alt: 'Photo 6', desc: 'yet another thing happened.', likes: 360, username: 'whobealex' },
     ]
   },
 }
@@ -66,17 +67,16 @@ function InstagramCard({ photo, onClick }) {
         <span className="text-[#3a3a4a] text-lg leading-none tracking-widest">···</span>
       </div>
 
-      {/* Photo - low quality thumbnail in grid */}
+      {/* Photo - thumbnail in grid */}
       <div onClick={onClick} className="cursor-pointer relative group">
-        <div className="relative w-full aspect-square">
-          <Image
+        <div className="relative w-full aspect-square overflow-hidden">
+          <img
             src={photo.src}
             alt={photo.alt}
-            fill
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            quality={40}
             loading="lazy"
-            className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+            decoding="async"
+            className="w-full h-full object-cover photo-thumb"
+            style={{ imageOrientation: 'from-image' }}
           />
         </div>
         {/* Hover overlay */}

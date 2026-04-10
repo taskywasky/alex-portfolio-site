@@ -68,3 +68,17 @@ body::after {
   pointer-events: none;
   z-index: 9999;
 }
+
+.photo-thumb {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+
+.group:hover .photo-thumb {
+  filter: grayscale(0%);
+}
+
+img {
+  image-orientation: from-image;
+}
+

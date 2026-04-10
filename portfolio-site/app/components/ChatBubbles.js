@@ -68,6 +68,9 @@ function Bubble({ side, zone, totalZones }) {
   const [message, setMessage] = useState('')
   const [name, setName] = useState('')
   const [top, setTop] = useState(20)
+  const [offset, setOffset] = useState(0)
+
+
 
   const zoneHeight = 100 / totalZones
   const zoneMin = zone * zoneHeight + 2   // small padding within zone
@@ -86,7 +89,9 @@ function Bubble({ side, zone, totalZones }) {
   }
 
   useEffect(() => {
+    setOffset(randomBetween(8, 40)) // tweak range for how far inward it goes
     const timeout = setTimeout(showNewBubble, randomBetween(500, 3000))
+    
     return () => clearTimeout(timeout)
   }, [])
 
@@ -95,7 +100,7 @@ function Bubble({ side, zone, totalZones }) {
       className="absolute"
       style={{
         top: `${top}%`,
-        [side]: '12px',
+        [side]: `${offset}px`,
         opacity: visible ? 1 : 0,
         transform: visible ? 'translateY(0) scale(1)' : 'translateY(10px) scale(0.95)',
         transition: 'opacity 0.4s ease, transform 0.4s ease',
