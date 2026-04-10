@@ -8,7 +8,7 @@ import FadeIn from '../components/FadeIn'
 const films = [
   {
     title: 'INTRUSIVE',
-    year: '2025',
+    year: '2024',
     type: 'Documentary',
     description: 'From an early age, Alex Welty was plagued by intrusive thoughts—relentless, unshakable doubts that challenged his sense of self. It wasn’t until he was diagnosed with OCD that it all began to make sense. In this raw and intimate documentary, Alex opens up about his mental health journey, tracing the highs and lows that have shaped him and his relationship with his father. Together, they confront the impact of his struggles, leading to unexpected revelations that will redefine their family’s understanding of love, resilience, and acceptance.',
     thumbnail: '/thumbnails/intrusive.png',
