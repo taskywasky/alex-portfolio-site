@@ -15,11 +15,19 @@ const films = [
     videoUrl: 'https://player.vimeo.com/video/1050982915?badge=0&autopause=0&player_id=0&app_id=58479', // ← swap with real URL, or remove if none
   },
   {
-    title: 'balright',
-    year: '2029',
-    type: 'SIGMA',
-    description: 'help.',
-    thumbnail: '/images/films/film2.jpg',
+    title: 'The Promotion',
+    year: '2025',
+    type: 'Short Film',
+    description: 'Starred in The Promotion, after helping with the general idea and storyboarding of the film. Throughout I helped make sure each set went smoothly and ended up having to step in as an actor for the film last minute. Other small contributions include partial costume design, as well as a contributor to the writing and dialogue.',
+    thumbnail: '/thumbnails/thepromotion.png',
+    videoUrl: null,
+  },
+  {
+    title: 'Don\'t Wake Me When I\'m Dreaming',
+    year: 'UNRELEASED',
+    type: 'Short Film',
+    description: '[REDACTED]',
+    thumbnail: 'construction_ahead.webp',
     videoUrl: null,
   },
 ]
