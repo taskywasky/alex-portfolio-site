@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import Typewriter from './components/Typewriter'
 import Card from './components/Card'
