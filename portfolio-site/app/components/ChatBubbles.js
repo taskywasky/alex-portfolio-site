@@ -32,7 +32,8 @@ const messages = [
   "hi my name is carmen winstead i am 17 years old",
   "HES CHEATING!",
   "the t counter is off the charts.",
-  "local taydens = {}"
+  "local taydens = {}",
+  "everything is awesome!"
 ]
 
 const names = [
